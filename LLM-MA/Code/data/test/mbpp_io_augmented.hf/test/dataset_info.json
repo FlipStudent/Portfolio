@@ -1,0 +1,50 @@
+{
+  "citation": "",
+  "description": "",
+  "features": {
+    "task_id": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "text": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "code": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "test_list": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "test_setup_code": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "challenge_test_list": {
+      "feature": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "_type": "Sequence"
+    },
+    "in_out_pairs": [
+      {
+        "input": {
+          "dtype": "string",
+          "_type": "Value"
+        },
+        "output": {
+          "dtype": "string",
+          "_type": "Value"
+        }
+      }
+    ]
+  },
+  "homepage": "",
+  "license": ""
+}

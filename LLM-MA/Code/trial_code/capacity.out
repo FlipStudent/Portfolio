@@ -1,0 +1,97 @@
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) 2023.01   2) StdEnv
+Running -- Test compact --
+Using device - cuda
+You are attempting to use Flash Attention 2.0 with a model not initialized on GPU. Make sure to move the model to GPU after initializing it on CPU with `model.to('cuda')`.
+Loading checkpoint shards:   0%|          | 0/3 [00:00<?, ?it/s]Loading checkpoint shards:  33%|███▎      | 1/3 [00:00<00:01,  1.67it/s]Loading checkpoint shards:  67%|██████▋   | 2/3 [00:01<00:00,  1.64it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:02<00:00,  1.41it/s]Loading checkpoint shards: 100%|██████████| 3/3 [00:02<00:00,  1.47it/s]
+Testing standard
+Succeeded batch size (50) in 69.94
+Succeeded batch size (100) in 79.90
+Failed at batch size (200)
+Failed at batch size (160.0)
+Succeeded batch size (128.0) in 114.75
+Failed at batch size (256.0)
+Failed at batch size (204.8)
+Failed at batch size (163.84000000000003)
+Working size: between 128.0 and 140.8
+Failed at batch size (131.07200000000003)
+Working size: between 128.0 and 140.8
+Failed at batch size (104.85760000000003)
+Working size: between 128.0 and 140.8
+Succeeded batch size (83.88608000000004) in 105.29
+Failed at batch size (167.77216000000007)
+Failed at batch size (134.21772800000005)
+Succeeded batch size (107.37418240000005) in 119.20
+Failed at batch size (214.7483648000001)
+Failed at batch size (171.7986918400001)
+Failed at batch size (137.43895347200007)
+Working size: between 107.37418240000005 and 118.11160064000006
+Succeeded batch size (109.95116277760006) in 90.99
+Failed at batch size (219.90232555520012)
+Failed at batch size (175.9218604441601)
+Failed at batch size (140.73748835532808)
+Working size: between 109.95116277760006 and 120.94627905536008
+Succeeded batch size (112.58999068426247) in 96.73
+Failed at batch size (225.17998136852495)
+Failed at batch size (180.14398509481998)
+Failed at batch size (144.115188075856)
+Working size: between 112.58999068426247 and 123.84898975268874
+Failed at batch size (115.29215046068481)
+Working size: between 112.58999068426247 and 123.84898975268874
+Succeeded batch size (92.23372036854785) in 106.12
+Failed at batch size (184.4674407370957)
+Failed at batch size (147.57395258967657)
+Failed at batch size (118.05916207174126)
+Working size: between 92.23372036854785 and 101.45709240540265
+Succeeded batch size (94.44732965739301) in 104.02
+Failed at batch size (188.89465931478603)
+Failed at batch size (151.11572745182883)
+Failed at batch size (120.89258196146307)
+Working size: between 94.44732965739301 and 103.89206262313232
+Succeeded batch size (96.71406556917046) in 110.11
+Failed at batch size (193.42813113834092)
+Failed at batch size (154.74250491067275)
+slurmstepd: error: *** JOB 17544572 ON a100gpu5 CANCELLED AT 2025-05-22T14:37:49 DUE TO TIME LIMIT ***
+
+###############################################################################
+Hábrók Cluster
+Job 17544572 for user s3978389
+Finished at: Thu May 22 14:37:54 CEST 2025
+
+Job details:
+============
+
+Job ID                         : 17544572
+Name                           : test_mistral
+User                           : s3978389
+Partition                      : gpushort
+Nodes                          : a100gpu5
+Number of Nodes                : 1
+Cores                          : 2
+Number of Tasks                : 1
+State                          : TIMEOUT  
+Submit                         : 2025-05-22T13:37:35
+Start                          : 2025-05-22T13:37:36
+End                            : 2025-05-22T14:37:50
+Reserved walltime              : 01:00:00
+Used walltime                  : 01:00:14
+Used CPU time                  : 00:58:48 (Efficiency: 48.81%)
+% User (Computation)           : 96.82%
+% System (I/O)                 :  3.18%
+Total memory reserved          : 6G
+Maximum memory used            : 1.47G
+Requested GPUs                 : a100=1
+Allocated GPUs                 : a100=1
+Max GPU utilization            : 100%
+Max GPU memory used            : 39.49G
+
+Acknowledgements:
+=================
+
+Please see this page for information about acknowledging Hábrók in your publications:
+
+https://wiki.hpc.rug.nl/habrok/introduction/scientific_output
+
+################################################################################
